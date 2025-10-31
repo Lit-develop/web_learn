@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "age": 29,
+    "email": "alice.johnson@example.com",
+    "phone": "+1-555-0101",
+    "address": {
+      "street": "10 Maple Ave",
+      "city": "Springfield",
+      "state": "IL",
+      "postal_code": "62701",
+      "country": "USA"
+    },
+    "metadata": {
+      "created_at": "2025-01-15T10:23:00Z",
+      "is_active": true,
+      "notes": "Example user"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bob Martin",
+    "age": 42,
+    "email": "bob.martin@example.com",
+    "phone": "+44-20-5555-0102",
+    "address": {
+      "street": "Flat 2, 5 Baker St",
+      "city": "London",
+      "state": "",
+      "postal_code": "NW1 6XE",
+      "country": "UK"
+    },
+    "metadata": {
+      "created_at": "2024-11-20T14:55:00Z",
+      "is_active": false,
+      "notes": "Inactive test user"
+    }
+  },
+  {
+    "id": 0,
+    "name": "First Last",
+    "age": 0,
+    "email": "name@example.com",
+    "phone": "+1-555-555-5555",
+    "address": {
+      "street": "123 Example St",
+      "city": "Cityname",
+      "state": "ST",
+      "postal_code": "12345",
+      "country": "Country"
+    },
+    "metadata": {
+      "created_at": "2025-10-31T00:00:00Z",
+      "is_active": true,
+      "notes": "Template entry"
+    }
+  }
+]
