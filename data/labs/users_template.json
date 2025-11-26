@@ -1,0 +1,144 @@
+{
+    "users": [
+        {
+            "id": "1",
+            "name": "Алексей Иванов",
+            "username": "aivanov",
+            "email": "alex.ivanov@example.com",
+            "active": true,
+            "roles": ["user"],
+            "created_at": "2023-02-15T09:23:00Z",
+            "last_login": "2025-10-30T18:12:45Z",
+            "profile": {
+                "age": 29,
+                "phone": "+7-495-123-4567",
+                "address": {
+                    "street": "ул. Ленина, д. 10, кв. 5",
+                    "city": "Москва",
+                    "state": "Москва",
+                    "zip": "101000",
+                    "country": "Russia"
+                }
+            },
+            "preferences": {
+                "newsletter": true,
+                "notifications": {
+                    "email": true,
+                    "sms": false
+                }
+            }
+        },
+        {
+            "id": "2",
+            "name": "Мария Петрова",
+            "username": "mpetrova",
+            "email": "maria.petrova@example.com",
+            "active": true,
+            "roles": ["user", "moderator"],
+            "created_at": "2022-11-05T14:40:00Z",
+            "last_login": "2025-10-29T07:05:10Z",
+            "profile": {
+                "age": 34,
+                "phone": "+7-812-321-9876",
+                "address": {
+                    "street": "Невский пр., д. 20",
+                    "city": "Санкт-Петербург",
+                    "state": "Северо-Запад",
+                    "zip": "190000",
+                    "country": "Russia"
+                }
+            },
+            "preferences": {
+                "newsletter": false,
+                "notifications": {
+                    "email": true,
+                    "sms": true
+                }
+            }
+        },
+        {
+            "id": "3",
+            "name": "Иван Смирнов",
+            "username": "ismirnov",
+            "email": "ivan.smirnov@example.com",
+            "active": false,
+            "roles": ["user"],
+            "created_at": "2021-06-20T08:00:00Z",
+            "last_login": null,
+            "profile": {
+                "age": 41,
+                "phone": "",
+                "address": {
+                    "street": "",
+                    "city": "",
+                    "state": "",
+                    "zip": "",
+                    "country": ""
+                }
+            },
+            "preferences": {
+                "newsletter": false,
+                "notifications": {
+                    "email": false,
+                    "sms": false
+                }
+            }
+        },
+        {
+            "id": "4",
+            "name": "Ольга Кузнецова",
+            "username": "okuzneцova",
+            "email": "olga.kuznetsova@example.com",
+            "active": true,
+            "roles": ["admin"],
+            "created_at": "2020-01-10T12:30:00Z",
+            "last_login": "2025-10-31T09:00:00Z",
+            "profile": {
+                "age": 38,
+                "phone": "+7-495-555-0101",
+                "address": {
+                    "street": "Проспект Мира, д. 1",
+                    "city": "Москва",
+                    "state": "Москва",
+                    "zip": "129090",
+                    "country": "Russia"
+                }
+            },
+            "preferences": {
+                "newsletter": true,
+                "notifications": {
+                    "email": true,
+                    "sms": true
+                }
+            }
+        },
+        {
+            "id": "5",
+            "name": "Денис Орлов",
+            "username": "dorlov",
+            "email": "denis.orlov@example.com",
+            "active": true,
+            "roles": ["user"],
+            "created_at": "2024-07-01T16:15:00Z",
+            "last_login": "2025-10-30T22:45:30Z",
+            "profile": {
+                "age": 26,
+                "phone": "+7-915-777-2233",
+                "address": {
+                    "street": "ул. Пушкина, д. 7",
+                    "city": "Казань",
+                    "state": "Татарстан",
+                    "zip": "420000",
+                    "country": "Russia"
+                }
+            },
+            "preferences": {
+                "newsletter": true,
+                "notifications": {
+                    "email": true,
+                    "sms": false
+                }
+            }
+        }
+    ]
+}

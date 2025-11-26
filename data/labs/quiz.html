@@ -1,0 +1,40 @@
+<title>КВИЗ</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+<h1></h1>
+    <script>
+        let bad_try=+0;
+        let wrong=' - Какой-то неправильный ответ, попробуйте еще раз!';
+        let question='1: Кто, следуя детской песенке, родился в лесу?';
+        let a=prompt(question);
+        while (a.toLowerCase()!=='елочка')
+        {
+            alert(a+wrong);
+            bad_try=bad_try+1;
+            a=prompt(question);
+        }
+        alert('Правильно!');
+
+        question='2: Какой химический элемент обозначается символом «Au»?';
+        a=prompt(question);
+        while (a.toLowerCase()!=='золото')
+        {
+            alert(a+wrong);
+            bad_try=bad_try+1;
+            a=prompt(question);
+        }
+        alert('Верно!');
+
+        let last_bad_try = +String(bad_try).slice(-1);// Определяем последнюю цифру количества неверных ответов
+        let try_word=' попыток.';
+        if(last_bad_try==1) {try_word=' попытку.'}
+        if(last_bad_try==2||last_bad_try==3||last_bad_try==4) {try_word=' попытки.'}
+
+        let element=document.querySelector('h1');
+        element.innerHTML = 'Поздравляем!<br>Вы ответили правильно на все вопросы!<br>Но с неверными ответами совершили: '+bad_try+try_word;
+    </script>
+</body>
