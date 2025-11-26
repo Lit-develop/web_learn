@@ -1,0 +1,152 @@
+import './App.css';
+import {useState} from 'react';
+import { articles } from './data.js';
+
+function List() {
+  const listItems = articles.map(article =>
+    <div key={article.id} className="col">
+      <div className="card" style={{ width: "18rem" }}>
+        <img src={article.url_img} className="card-img-top" alt={article.title} />
+        <div className="card-body">
+          <h5 className="card-title">{article.title}</h5>
+          <p className="card-text">
+            {article.discription}
+          </p>
+          <a href={article.url} className="btn btn-primary">
+            Почитать
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+  
+  return (
+    <div className="row align-items-start">
+      {listItems}
+    </div>
+  );
+}
+
+
+
+
+
+
+function Menu() {
+  return (
+    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#">
+      Журнал Bright </a>
+    <button
+      className="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span className="navbar-toggler-icon" />
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav" style={{justifyContent: 'flex-end'}}>
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="#">
+            Главная
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            Мнения
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#">
+            Pricing
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link disabled" aria-disabled="true">
+            Disabled
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  )
+}
+
+function Content() {
+  return (
+    <div className="container text-center" style={{marginTop:'30px'}}>
+  <div className="row align-items-start">
+    <div className="col"><div className="card" style={{ width: "18rem" }}>
+  <img src="..." className="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card’s content.
+    </p>
+    <a href="#" className="btn btn-primary">
+      Go somewhere
+    </a>
+  </div>
+</div></div>
+    <div className="col"><div className="card" style={{ width: "18rem" }}>
+  <img src="..." className="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card’s content.
+    </p>
+    <a href="#" className="btn btn-primary">
+      Go somewhere
+    </a>
+  </div>
+</div></div>
+    <div className="col"><div className="card" style={{ width: "18rem" }}>
+  <img src="..." className="card-img-top" alt="..." />
+  <div className="card-body">
+    <h5 className="card-title">Card title</h5>
+    <p className="card-text">
+      Some quick example text to build on the card title and make up the bulk of
+      the card’s content.
+    </p>
+    <a href="#" className="btn btn-primary">
+      Go somewhere
+    </a>
+  </div>
+</div></div>
+  </div>
+  </div>
+  )
+}
+ 
+function App() {
+
+const [isShown, setIsShown] = useState(false);
+
+  const handleClick = event => {
+    setIsShown(current => !current);
+  };
+
+  return (
+    <div className="App">
+      <Menu />
+      <Content/>
+       {isShown && (
+        <div>
+          <List/>
+        </div>
+      )}
+      <button onClick={handleClick}>Показать еще</button>  
+</div>
+  );
+}
+
+
+export default App;
